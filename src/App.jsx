@@ -7,7 +7,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const copyArray = [...blogList, newBlogTitle];
+    const copyArray = [...blogList, {titolo: newBlogTitle}];
     setBlogList(copyArray)
     
   }
